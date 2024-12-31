@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.CrudAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="139dp">
+
+        <TextView
+            android:id="@+id/addCrud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah data mahasiswa"
+            android:textColor="@color/orange"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/txtEditNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addCrud"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:hint="masukan nama"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/txtEditNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEditNama"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:hint="Masukan NIM"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/txtEditJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEditNim"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:hint="Masukan Jurusan"
+            android:padding="12dp"/>
+
+
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_done_24" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
